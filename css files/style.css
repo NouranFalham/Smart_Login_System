@@ -1,0 +1,206 @@
+:root
+{
+    --main-color : #F2BE13;
+    --background-color : black;
+    --font : Rubik;
+    --font-color : white;
+    --input-color: #231C12;
+    --box-shadow: orange;
+}
+body
+{
+    background-color: var(--main-color);
+}
+#loginsection
+{
+    display: flex ;
+    justify-content: center ;
+    align-items: center ;
+    min-height: 100vh;
+    background-color: var(--main-color);
+}
+.loginPage
+{
+    background-color: var(--background-color);
+    padding: 50px !important;
+    box-shadow: 0px 0px 200px var(--box-shadow), 0px 0px 200px var(--box-shadow) ;
+}
+.loginPage h1
+{
+    font-family:  var(--font);
+    color: var(--main-color);
+    font-weight: 600;
+    font-size: 45px;
+    padding-bottom: 40px;
+}
+.loginPage label
+{
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--font-color) ;
+}
+.loginPage .par1
+{
+    color: var(--font-color);
+}
+.loginPage a
+{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+.loginPage a:hover
+{
+    text-decoration: underline;
+}
+.loginPage input
+{
+    background-color: var(--input-color);
+    border: transparent;
+    color: var(--font-color);
+}
+.loginPage ::placeholder
+{
+    color: var(--font-color);
+}
+.form-control:focus {
+    border-color: var(--main-color) ;
+    box-shadow: 0px 0px 10px var(--main-color), 0px 0px 10px var(--main-color) ;
+    background-color: var(--input-color);
+    color: var(--font-color);
+}
+#loginBtn
+{
+    background-color: var(--main-color);
+    transition: background-color 0.3s;
+    font-weight: 600;
+}
+#loginBtn:hover
+{
+    background-color:  var(--box-shadow);
+}
+
+/* ____________SignUp___________ */
+
+#signupsection
+{
+    display: flex ;
+    justify-content: center ;
+    align-items: center ;
+    min-height: 100vh;
+    background-color: var(--main-color);
+}
+.signupPage
+{
+    background-color: var(--background-color);
+    padding: 50px !important;
+    box-shadow: 0px 0px 200px var(--box-shadow), 0px 0px 200px var(--box-shadow) ;
+}
+.signupPage h1
+{
+    font-family:  var(--font);
+    color: var(--main-color);
+    font-weight: 600;
+    font-size: 45px;
+    padding-bottom: 40px;
+}
+.signupPage label
+{
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--font-color) ;
+}
+.signupPage .par2
+{
+    color: var(--font-color);
+}
+.signupPage a
+{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+.signupPage a:hover
+{
+    text-decoration: underline;
+}
+.signupPage input
+{
+    background-color: var(--input-color);
+    border: transparent;
+    color: var(--font-color);
+}
+.signupPage ::placeholder
+{
+    color: var(--font-color);
+}
+#addUser
+{
+    background-color: var(--main-color);
+    transition: background-color 0.3s;
+    font-weight: 600;
+}
+#addUser:hover
+{
+    background-color:  var(--box-shadow);
+}
+
+/* ___________Home___________ */
+
+.navbar
+{
+    background-color: var(--main-color) !important ;
+    box-shadow: 1px 1px 5px var(--background-color), 1px 1px 5px var(--background-color);
+}
+.navbar-brand
+{
+    font-size: 24px;
+    font-family: var(--font);
+    font-weight: 700;
+    color: var(--background-color);
+}
+.nav-link
+{
+    font-size: 17px !important;
+    font-family: var(--font) !important;
+    font-weight: 500 !important;
+    color: var(--background-color) !important;
+}
+#logout
+{
+    border: solid var(--background-color) 2px;
+    padding: 10px;
+}
+.nav-link:hover #logout
+{
+    color: var(--font-color);
+    background-color: black;
+}
+#homesection
+{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.home
+{
+    box-shadow: 0px 0px 400px var(--box-shadow), 0px 0px 400px var(--box-shadow) ;
+    background-color: var(--background-color);
+    margin-top: 150px !important;
+}
+.home h1
+{
+    color: var(--font-color);
+    font-family: var(--font);
+    font-weight: 700;
+    font-size: 40px;
+    padding: 30px;
+}
+@media screen and (max-width: 992px) {
+    .loginPage{
+        width: 90% !important;
+    }
+    .signupPage {
+        width: 90% !important;
+    }
+}

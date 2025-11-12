@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css files/all.min.css">
+    <link rel="stylesheet" href="../css files/bootstrap.min.css">
+    <link rel="stylesheet" href="../css files/style.css">
+</head>
+<body>
+    
+    <section id="signupsection">
+        <div class="container">
+            <div class="signupPage w-50 mx-auto ">
+                <h1 class=" text-center">SIGN UP</h1>
+                <label class="my-2" for="signup-name">Username</label>
+                <input type="text" name="Username" placeholder="Enter your Name" id="signup-name" class="form-control mb-2" >
+                <label class="my-2" for="signup-email">Email</label>
+                <input type="email" name="Email" placeholder="Enter your Email" id="signup-email" class="form-control mb-2" >
+                <label class="mt-3 mb-2" for="signup-password">Password</label>
+                <input type="password" name="Password" placeholder="Enter your Password" id="signup-password" class="form-control mb-3" >
+                <p class="text-danger d-none text-center mb-0" id="email-alert">Email already exists</p>
+				<p class="text-danger d-none text-center mb-0" id="email-message">Email not valid</p>
+				<p class="text-danger d-none text-center mb-0" id="password-message">Password must have uppercase + lowercase + number + special char, min 8 chars</p>
+				<p class="text-danger d-none text-center mb-0" id="name-message">Name must be at least 2 letters</p>
+				<p class="text-success d-none text-center mb-0" id="success-message">Success</p>
+                <button id="addUser" class="btn w-100 p-2 mt-4 mb-3">Sign Up</button>
+                <p class="par2 text-center">You have an account? <a href="../index.html">Log in</a></p>
+            </div>
+        </div>
+    </section>
+
+    <script src="../js files/bootstrap.bundle.min.js"></script>
+    <script src="../js files/signup.js"></script>
+</body>
+</html>
